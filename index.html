@@ -30,26 +30,33 @@
 <body>
 
 <!-- Navbar -->
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="#">
       <img src="assets/Images/5968705.png" alt="SkillCraft Logo" width="32" height="32" class="me-2 rounded-circle" />
-      <b><span class="text-white";>SkillCraft Technology</span></b>
+      <b><span class="text-white">SkillCraft Technology</span></b>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>&emsp;&emsp;&emsp;
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>&emsp;&emsp;&emsp;
-        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>&emsp;&emsp;&emsp;
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
+    <!--  Toggler Button -->
+   <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
+    <!--  Collapsible Menu -->
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+  <ul class="navbar-nav gap-0 gap-lg-5 text-center text-lg-start mt-3 mt-lg-0">
+    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+  </ul>
+</div>
+</div>
 </nav>
+
 
 
   <!-- Home Section -->
@@ -151,14 +158,17 @@
 </footer>
 
 
-    <!-- AOS JS Init -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1500,
-      once: true
-    });
-  </script>
+   <!-- AOS JS Init -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1500,
+    once: true
+  });
+</script>
+
+<!-- Add Bootstrap JS Bundle (REQUIRED for toggler to work) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
