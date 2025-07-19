@@ -1,0 +1,297 @@
+html {
+  scroll-padding-top: 15px;
+}
+
+/* ========== Global ========== */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ========== Sections ========== */
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+section h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ========== Back to Top Button ========== */
+.back{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0d6efd;
+  color: #d3dfdc;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+/* ========== Back to Top Button: Hover Effect  ========== */
+.back:hover {
+  background-color: #6610f2;
+}
+
+/* ========== Navbar ========== */
+.navbar {
+  background: linear-gradient(135deg, #0d6efd, #6610f2); /* Blue to Purple */ 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ========== Navbar Scrolled Color Effect ========== */
+.navbar.scrolled {
+  background: linear-gradient(135deg, #6610f2, #6f42c1); /* Different gradient on scroll */
+  background-color: #0d6efd !important; /* Blue when scrolling */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== Navbar Nav-Link Hover Style ========== */
+.navbar .nav-link {
+  position: relative;
+  padding: 8px 16px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 80px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+  background: linear-gradient(135deg, #1fcecb, #f8de7e ); 
+  color: #000;
+  border:2px solid black;
+  box-shadow: 0 0 8px rgba(20, 20, 20, 0.5);
+  padding: 8px 16px;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(250, 166, 11);
+  transition: width 0.5s;
+}
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ========== Navbar Logo ========== */
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+.navbar-brand:hover img {
+  transform: scale(1.1);
+}
+
+/* ========== Home Section ========== */
+.home {
+  background: linear-gradient(145deg, #5433FF, #12D8FA,#a66fcb);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.home h1{
+  text-shadow: 2px 6px 16px rgba(0, 0, 0, 0.4);
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 700 !important;
+  line-height: 1.2;
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff;
+  font-weight: 700;
+  font-size: calc(1.475rem + 2.7vw);
+  animation: typing 3.5s steps(30, end), blink 0.8s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.home .text{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 1.5s ease forwards;
+  animation-delay: 1s;
+  font-size: 20px;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ========== Button (Explore Service) ========== */
+.home .bt{ 
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #0d6efd, #6610f2); 
+  color: whitesmoke;
+  border:2px solid black
+}
+
+.home-card {
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); 
+  border: 3px solid black;
+  padding: 45px 27px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+/* ========== About ========== */
+.t1{
+  font-size:22px;
+  font-weight:360;
+}
+.ab{
+  background:linear-gradient(135deg,#9CECFB, #65C7F7,#0052D4);
+}
+.ab .ha{
+  font-size: 42px;
+  font-weight:bolder;
+  margin-bottom: 32px;
+}
+
+/* ========== Services ========== */
+.serv{
+  background: linear-gradient(135deg, #00d4ff, #ff6b81); 
+}
+.serv .hs{
+  font-size: 42px;
+  font-weight:bolder;
+  margin-bottom:62px;
+}
+
+/* ========== Footer ========== */
+footer {
+  font-size: 0.9rem;
+}
+
+/* ========== Contact Form ========== */
+form input, form textarea {
+  border-radius: 10px;
+  padding: 12px;
+}
+
+
+
+/* ========== Service Card Enhancements ========== */
+.service-card {
+  transition: all 0.4s ease;
+  background-color: hwb(0 96% 2% / 0.685);
+  position: relative;
+  overflow: hidden;
+  color: #000000;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow:  0 10px 25px black;
+  transform: translateY(-8px);
+  padding: 28px;
+}
+
+/* ========== Gradient Backgrounds on Hover ========== */
+.card-web:hover {
+  background: linear-gradient(135deg, #007bff, #00d4ff); /* Blue gradient */
+}
+
+.card-ui:hover {
+  background: linear-gradient(135deg, #198754, #8bc34a); /* Green gradient */
+}
+
+.card-internship:hover {
+  background: linear-gradient(135deg, #dc3545, #ff6b81); /* Red gradient */
+}
+
+/* ========== Icon Rotation Effect ========== */
+.service-card i {
+  transition: transform 0.4s ease;
+}
+.service-card:hover i {
+  transform: rotate(360deg);
+}
+/* Text color fix on hover */
+.service-card:hover h5,
+.service-card:hover p,
+.service-card:hover i {
+color: whitesmoke !important;
+}
+
+/* ========== Contact  ========== */
+.cont {
+  background: linear-gradient(135deg,#2980b9,#6dd5fa,#ffffff);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  background-color: #8dbcee;
+  padding: 40px;
+  border-radius: 50px;
+  margin-top: 45px;
+  border: 2px solid black;
+  box-shadow:  0 10px 25px black;
+  transform: translateY(-8px);
+}
+
+.sub {
+  border: 2px solid black;
+  background-color: #6610f2;
+  color: white;
+  transition: 0.3s;
+}
+
+.sub:hover {
+  background-color:  #4f5af0; /* Slightly darker purple */
+  color: white;
+  border: 2px solid black;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #222;
+}
+
+/* ========== Footer  ========== */
+.f1 {
+  background-color: #111;  /* dark clean footer */
+  color: #fff;
+}
+
+.f1 .social-icons a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.f1 .social-icons a:hover {
+  color: #00d1ff; /* hover color */
+}
+
+

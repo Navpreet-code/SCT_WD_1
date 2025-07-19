@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillCraft - Landing Page</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- AOS Library CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<!-- Back To Top Button -->
+<a href="#home" class="back d-none" id="backToTop">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="G:\SkillCraft Projects\Task-1\assets\Images\5968705.png" alt="SkillCraft Logo" width="32" height="32" class="me-2 rounded-circle" />
+      <b><span class="text-white";>SkillCraft Technology</span></b>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>&emsp;&emsp;&emsp;
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>&emsp;&emsp;&emsp;
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>&emsp;&emsp;&emsp;
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Home Section -->
+  <section id="home" class="home vh-100 d-flex align-items-center justify-content-center text-center">
+    <div class="container text-white">
+      <div class="home-card">
+      <h1 class="typing">Welcome to SkillCraft</h1>
+      <p class="text">Create. Code. Launch — Build professional websites with SkillCraft.</p>
+      <a href="" class="bt btn btn-lg mt-3">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="ab vh-100 d-flex align-items-center justify-content-center text-center" data-aos="zoom-in-up" data-aos-delay="380">
+    <div class="container">
+      <h2 class="ha">About Us</h2>
+      <p class="t1">We guide learners to build real-world websites using HTML, CSS, Bootstrap, and JavaScript — turning beginners into confident web developers.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="serv vh-100 d-flex align-items-center justify-content-center text-center" data-aos="zoom-in" data-aos-delay="380">
+    <div class="container">
+      <h2 class="hs">Our Services</h2>
+      <div class="row g-4">
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+    <div class="service-card card-web">
+        <i class="fas fa-code fa-2x mb-3 text-primary"></i>
+        <h5>Web Development</h5>
+        <p>Build responsive and beautiful websites from scratch.</p>
+    </div>
+    </div>
+
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+    <div class=" service-card card-ui">
+        <i class="fas fa-pencil-ruler fa-2x mb-3 text-success"></i>
+        <h5>UI/UX Design</h5>
+        <p>Create intuitive, interactive, and attractive user interfaces.</p>
+    </div>
+    </div>
+
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+    <div class=" service-card card-internship">
+        <i class="fas fa-rocket fa-2x mb-3 text-danger"></i>
+        <h5>Internship Projects</h5>
+        <p>Work on real-world internship tasks to improve your skills.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="cont vh-100 d-flex align-items-center text-center" data-aos="fade-down" data-aos-delay="380">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="box">
+          <form class="text-start">
+            <h2 class="text-center mb-4">Contact Us</h2>
+
+            <label for="name" class="form-label fw-bold">Name:</label>
+            <input type="text" id="name" placeholder="Enter Name" class="form-control rounded-2 mb-3" required />
+
+            <label for="email" class="form-label fw-bold">Email:</label>
+            <input type="email" id="email" placeholder="Enter Email" class="form-control rounded-2 mb-3" required />
+
+            <label for="message" class="form-label fw-bold">Message:</label>
+            <textarea id="message" placeholder="Write A Message" rows="4" class="form-control rounded-2 mb-4" required></textarea>
+
+            <div class="text-center">
+              <button class="btn btn-lg sub rounded-pill px-5">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="f1 text-white text-center py-4">
+  <div class="container">
+     <div class="social-icons mb-2">
+      <a href="https://www.linkedin.com/" target="_blank" class="me-3">
+        <i class="fab fa-linkedin fa-lg"></i>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" class="me-3">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+    </div>
+    <p class="mb-3">&copy; 2025 <strong>SkillCraft</strong>. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <!-- AOS JS Init -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
