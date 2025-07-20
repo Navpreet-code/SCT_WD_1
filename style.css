@@ -25,6 +25,7 @@ section h2 {
   bottom: 30px;
   right: 30px;
   background-color: #0d6efd;
+  border: 3px solid black;
   color: #d3dfdc;
   font-size: 20px;
   padding: 10px 15px;
@@ -201,14 +202,29 @@ section h2 {
 }
 
 /* ========== Services ========== */
-.serv{
-  background: linear-gradient(135deg, #00d4ff, #ff6b81); 
+.serv {
+  background: linear-gradient(135deg, #00d4ff, #ff6b81);
+  padding-top: 180px;
+  padding-bottom: 180px;
 }
-.serv .hs{
-  font-size: 42px;
-  font-weight:bolder;
-  padding-top: 60px;
-  padding-bottom:60px;
+
+.serv .hs {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 40px;
+  color: black;
+}
+
+/* Responsive heading on smaller screens */
+@media (max-width: 768px) {
+  .serv {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .serv .hs {
+    font-size: 2rem;
+  }
 }
 
 /* ========== Footer ========== */
@@ -257,12 +273,6 @@ form input, form textarea {
 }
 .service-card:hover i {
   transform: rotate(360deg);
-}
-/* Text color fix on hover */
-.service-card:hover h5,
-.service-card:hover p,
-.service-card:hover i {
-color: whitesmoke !important;
 }
 
 /* ========== Contact  ========== */
