@@ -1,6 +1,6 @@
 # 🌐 SkillCraft Task 1 – Responsive Landing Page (SCT_WD_1)
 
-✅ This project is developed as part of my Web Development Internship at [SkillCraft Technology]. It showcases my ability to build a fully responsive, animated, and modern landing page using front-end technologies.
+✅ This project is developed as part of my Web Development Internship at SkillCraft Technology. It showcases my ability to build a fully responsive, animated, and modern landing page using front-end technologies.
 
 ---
 
